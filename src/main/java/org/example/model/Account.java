@@ -8,11 +8,13 @@ public abstract class Account {
 
     protected double balance;
 
+    // TODO: Maybe need to pass in balance here? Missing initial balance right now I think
     public Account() {
         this.ACCOUNT_ID = nextAccountId;
         nextAccountId += 5; // Increment by 5 for every new account
     }
 
+    // TODO: Maybe a bug here?
     public double withdraw(double amount) {
         this.balance -= amount;
         return amount;
