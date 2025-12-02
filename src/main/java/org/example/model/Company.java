@@ -1,4 +1,8 @@
 package org.example.model;
 
-public class Company {
+public class Company extends Customer {
+
+    public Company(String name, String address) {
+        super(name, address);
+    }
 }
