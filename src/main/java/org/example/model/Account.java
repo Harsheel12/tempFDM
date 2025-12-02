@@ -13,6 +13,7 @@ public abstract class Account {
         nextAccountId += 5; // Increment by 5 for every new account
     }
 
+    // TODO: Maybe a bug here?
     public double withdraw(double amount) {
         this.balance -= amount;
         return amount;
